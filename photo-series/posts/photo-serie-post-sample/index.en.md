@@ -1,6 +1,6 @@
 ---
 title: Photo Series Sample
-headline: 
+headline: Transformation
 metaTitle: 
 metaDescription:
 cover:
