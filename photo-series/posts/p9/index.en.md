@@ -1,12 +1,12 @@
 ---
-title: Photo Series 9
+title: Photo Series 99
 headline: 
 metaTitle: 
 metaDescription:
 cover:
   sm: ./images/2.jpg
   xl: 
-  alt: sample 9
+  alt: sample 99
 datePublished: 2020-05-01T16:22:00Z
 dateModified: 2021-03-14T16:22:00Z
 ---
