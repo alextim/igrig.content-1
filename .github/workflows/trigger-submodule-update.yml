@@ -1,0 +1,26 @@
+name: "Trigger Submodule Update"
+
+on:  
+  push:
+    paths-ignore:
+      - 'data/locales/translations/src/*.json'
+      - '.github/**/*.*'
+      - '.gitignore'
+      - 'README.md'
+
+jobs:
+  runCURL:
+    runs-on: ubuntu-latest
+   
+    steps:    
+      - run: |
+          curl \
+            -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            -u ${{ secrets.API_TOKEN_IGRIG }} \
+            https://api.github.com/repos/alextim/igrig/actions/workflows/submodule-update.yml/dispatches \
+            -d '{"ref":"main"}'
+
+            # local
+            # -u ${{ secrets.API_TOKEN }} \
+            # https://api.github.com/repos/igryg/igrig/actions/workflows/7940621/dispatches \
