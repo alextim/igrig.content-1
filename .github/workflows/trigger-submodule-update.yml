@@ -19,4 +19,4 @@ jobs:
             -H "Accept: application/vnd.github.v3+json" \
             -u ${{ secrets.API_TOKEN_IGRIG }} \
             https://api.github.com/repos/alextim/igrig/actions/workflows/submodule-update.yml/dispatches \
-            -d '{"ref":"master"}'
+            -d '{"ref":"main"}'
